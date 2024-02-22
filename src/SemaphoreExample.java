@@ -15,6 +15,7 @@ public class SemaphoreExample {
                 // TODO
                 semaphore.acquire();
 
+
                 System.out.println(Thread.currentThread().getName() + " is accessing the resource.");
                 // Simulating some work
                 Thread.sleep(1000);
@@ -22,8 +23,8 @@ public class SemaphoreExample {
                 e.printStackTrace();
             } finally { // Release the permit
             //TODO
-
                 semaphore.release();
+
             }
         }
     }
@@ -38,13 +39,13 @@ public class SemaphoreExample {
 
         @Override
         public void run() {
-
             // TODO
-            
+            sharedResource.accessResource();
+
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         SharedResource sharedResource = new SharedResource(2); //  permits available
 
         // Create multiple threads trying to access the resource
