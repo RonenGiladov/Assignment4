@@ -1,4 +1,5 @@
-
+//  Ronen Giladov 209506757; Shoham Avraham 318232469; Assignment4_part2
+//  GitHub: https://github.com/RonenGiladov/Assignment4
 import java.util.concurrent.*;
 
 public class SemaphoreExample {
